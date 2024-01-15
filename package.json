@@ -1,0 +1,20 @@
+{
+  "name": "styled-components-sorting",
+  "displayName": "Styled Components Sorting",
+  "description": "Styled Components Sorting Extension",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Keymaps"
+  ],
+  "contributes": {
+    "keybindings": [
+      {
+        "key": "ctrl+.",
+        "command": "workbench.action.showCommands"
+      }
+    ]
+  }
+}
