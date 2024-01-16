@@ -1,7 +1,6 @@
 import * as vscode from 'vscode'
-import { expect } from 'chai'
-import { isStyledComponentsFile } from '../extension'
 import assert from 'assert'
+import { isStyledComponentsFile } from '../extension'
 
 suite('isStyledComponentsFile', () => {
   test('should return true for files with styled-components import', () => {
