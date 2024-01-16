@@ -9,8 +9,11 @@ export function activate(context: vscode.ExtensionContext) {
 // This method is called when your extension is deactivated
 export function deactivate() {}
 
-function isStyledComponentsFile(document: vscode.TextDocument): boolean {
+export function isStyledComponentsFile(document: vscode.TextDocument): boolean {
   // 여기에서 document의 파일 타입이 styled-components인지 확인합니다.
   // 예를 들어, 파일 확장자나 특정 문법 구조를 체크할 수 있습니다.
-  return document.languageId === 'javascript' || document.languageId === 'typescript'
+  const fileContent = document.getText()
+  const styledImportRegex = /import\s+(\w+,\s*\{.*\}|\w+)\s+from\s+'styled-components';/
+
+  return styledImportRegex.test(fileContent)
 }
