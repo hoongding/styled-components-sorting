@@ -1,26 +1,16 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
-import * as vscode from 'vscode';
+import * as vscode from 'vscode'
 
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "styled-components-sorting" is now active!');
-
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with registerCommand
-	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('styled-components-sorting.helloWorld', () => {
-		// The code you place here will be executed every time your command is executed
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from Styled Components Sorting!');
-	});
-
-	context.subscriptions.push(disposable);
+  context.subscriptions.push()
 }
 
 // This method is called when your extension is deactivated
 export function deactivate() {}
+
+function isStyledComponentsFile(document: vscode.TextDocument): boolean {
+  // 여기에서 document의 파일 타입이 styled-components인지 확인합니다.
+  // 예를 들어, 파일 확장자나 특정 문법 구조를 체크할 수 있습니다.
+  return document.languageId === 'javascript' || document.languageId === 'typescript'
+}
