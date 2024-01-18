@@ -14,8 +14,9 @@
   "contributes": {
     "commands": [
       {
-        "command": "styled-components-sorting.helloWorld",
-        "title": "Hello World"
+        "command": "styled-components-sorting.styled-sorting",
+        "title": "Sort Styled Components",
+        "category": "Styled Components Sorting"
       }
     ]
   },
