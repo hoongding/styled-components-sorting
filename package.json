@@ -14,7 +14,9 @@
   },
   "icon": "assets/styled-components-icon.png",
   "categories": [
-    "Other"
+    "Programming Languages",
+    "Keymaps",
+    "Formatters"
   ],
   "activationEvents": [],
   "main": "./dist/extension.js",
