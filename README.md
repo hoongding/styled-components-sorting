@@ -1,4 +1,4 @@
-# styled-components-sorting README
+# Styled Components Auto Sorting VScode Extension
 
 Styled Components Sorting Extension for VS Code
 
