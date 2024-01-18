@@ -2,6 +2,10 @@
   "name": "Hoonding-styled-components-sorting",
   "displayName": "Hoonding-Styled Components Sorting",
   "description": "Styled Components Auto Sorting Extension",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hoongding/styled-components-sorting"
+  },
   "version": "0.0.1",
   "readme": "README.md",
   "publisher": "Hoonding",
