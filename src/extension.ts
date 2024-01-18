@@ -45,7 +45,6 @@ export function sortCssInFileContent(fileContent: string, sortFunc: (cssContent:
   return fileContent.replace(regex, (match, p1, p2) => {
     const cssContent = p1 || p2 // CSS 내용 추출
     const sortedCssContent = sortFunc(cssContent) // CSS 정렬 함수 사용
-    console.log(cssContent, sortedCssContent)
 
     return match.replace(cssContent, sortedCssContent) // 정렬된 CSS로 교체
   })
