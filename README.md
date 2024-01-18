@@ -52,11 +52,10 @@ These settings allow you to tailor the extension's functionality to better suit 
 ## Known Issues
 
 Plz mail to me if you have any issues.
+
 mail: `orirori512@naver.com`
 
 ## Release Notes
-
-Users appreciate release notes as you update your extension.
 
 ### 0.0.1
 
@@ -70,5 +69,9 @@ Change Extension Icon
 
 - Update README.md
 - Add Extension Default Keybindings
+
+### 0.0.4
+
+- Add feature to add leading and trailing spaces for formatting when sorting
 
 **Enjoy!**

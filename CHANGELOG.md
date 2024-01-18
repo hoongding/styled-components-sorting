@@ -1,9 +1,18 @@
 # Change Log
 
-All notable changes to the "styled-components-sorting" extension will be documented in this file.
+## 0.0.1
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+Initial release of styled-components-sorting
 
-## [Unreleased]
+## 0.0.2
 
-- Initial release
+Change Extension Icon
+
+## 0.0.3
+
+- Update README.md
+- Add Extension Default Keybindings
+
+## 0.0.4
+
+- Add feature to add leading and trailing spaces for formatting when sorting
