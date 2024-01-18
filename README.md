@@ -33,4 +33,8 @@ Users appreciate release notes as you update your extension.
 
 Initial release of styled-components-sorting
 
+### 0.0.2
+
+Change Extension Icon
+
 **Enjoy!**

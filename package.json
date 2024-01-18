@@ -6,12 +6,13 @@
     "type": "git",
     "url": "https://github.com/hoongding/styled-components-sorting"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "readme": "README.md",
   "publisher": "Hoonding",
   "engines": {
     "vscode": "^1.85.0"
   },
+  "icon": "assets/styled-components-icon.png",
   "categories": [
     "Other"
   ],
