@@ -29,7 +29,6 @@ export function parseCssProperties(cssString: string) {
   return properties.filter((property) => !/^\s*$/.test(property))
 }
 
-// TODO: combine 할 때 맨 앞에 공백들어가게끔 변경
 export function combineProperties(properties: string[]) {
   properties[0] = '\n  ' + properties[0]
   return properties.join(';\n  ') + ';\n'
