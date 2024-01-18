@@ -1,12 +1,43 @@
 export function parseCssProperties(cssString: string) {
-  // 첫번째 프로퍼티 앞에있는 공백은 따로 떼어놓기?
-  const properties = cssString
-    .split(';') // 세미콜론으로 속성 분리
-    .filter((property) => !/^\s+$/.test(property)) // 빈 속성 제거
+  let braceLevel = 0
+  let templateLevel = 0
+  let currentProperty = ''
+  const properties = []
 
-  return properties
+  for (let i = 0; i < cssString.length; i++) {
+    const char = cssString[i]
+
+    if (char === '{') {
+      braceLevel++
+    } else if (char === '}') {
+      braceLevel--
+    }
+
+    if (char === '`') {
+      if (templateLevel === 0 || cssString[i - 1] === '\\') {
+        templateLevel = templateLevel === 0 ? 1 : 0
+      }
+    }
+
+    if (char === ';' && braceLevel === 0 && templateLevel === 0) {
+      currentProperty = currentProperty.trim()
+      if (currentProperty) {
+        properties.push(currentProperty)
+      }
+      currentProperty = ''
+    } else {
+      currentProperty += char
+    }
+  }
+
+  currentProperty = currentProperty.trim()
+  if (currentProperty) {
+    properties.push(currentProperty)
+  }
+
+  return properties.filter((property) => !/^\s*$/.test(property))
 }
 
 export function combineProperties(properties: string[]) {
-  return properties.join(';') + ';'
+  return properties.join(';\n') + ';'
 }

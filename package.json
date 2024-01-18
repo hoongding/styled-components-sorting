@@ -1,8 +1,10 @@
 {
-  "name": "styled-components-sorting",
-  "displayName": "Styled Components Sorting",
+  "name": "Hoonding-styled-components-sorting",
+  "displayName": "Hoonding-Styled Components Sorting",
   "description": "Styled Components Auto Sorting Extension",
   "version": "0.0.1",
+  "readme": "README.md",
+  "publisher": "Hoonding",
   "engines": {
     "vscode": "^1.85.0"
   },
