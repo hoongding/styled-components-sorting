@@ -68,6 +68,7 @@ Change Extension Icon
 
 ### 0.0.3
 
-Update README.md
+- Update README.md
+- Add Extension Default Keybindings
 
 **Enjoy!**
