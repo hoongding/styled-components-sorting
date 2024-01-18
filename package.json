@@ -25,6 +25,15 @@
         "title": "Sort Styled Components",
         "category": "Styled Components Sorting"
       }
+    ],
+    "keybindings": [
+      {
+        "command": "styled-components-sorting.styled-sorting",
+        "key": "cmd+shift+s",
+        "mac": "cmd+shift+s",
+        "win": "ctrl+shift+s",
+        "when": "editorTextFocus"
+      }
     ]
   },
   "scripts": {
