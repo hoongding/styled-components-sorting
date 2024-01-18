@@ -1,5 +1,5 @@
 import assert from 'assert'
-import { sortCssAlphabetically } from '../sorting-convention/alphabetSorting'
+import { sortCssAlphabetically } from '../sort-rules/alphabetSorting'
 
 suite('alphabetSorting', () => {
   test('alphabet sorting test case1', () => {
