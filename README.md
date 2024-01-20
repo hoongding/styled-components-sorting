@@ -74,4 +74,4 @@ Change Extension Icon
 
 - Add feature to add leading and trailing spaces for formatting when sorting
 
-**Enjoy!**
+**Enjoy**
